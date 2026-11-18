@@ -32,9 +32,9 @@
 ## Exercice 4 — Déclaratif
 
 7. Quelle différence entre `kubectl create` et `kubectl apply` ?
-   >
+   > `create` c'est pour initialiser mais si on refait create on aura une erreur. Alors qu'`apply` permet de mettre à jour.
 8. À quoi sert le `selector` d'un Service ? Que se passe-t-il s'il ne correspond à aucun pod ?
-   >
+   > le `selector` permet d'indiquer au Service vers quel pod envoyer le trafic. Le service va se créer mais on ne pourra pas s'y connecter car il n'y a pas de pod au bout.
 
 ## Exercice 5 — Scaling & mises à jour
 
