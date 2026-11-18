@@ -61,7 +61,11 @@
 ## Bonus (facultatif)
 
 14. Bonus réalisés et remarques :
-    >
+- A :
+    > Le site reste accessible cette fois-ci.
+
+- B : 
+    > 
 
 ---
 
