@@ -65,7 +65,10 @@
     > Le site reste accessible cette fois-ci.
 
 - B : 
-    > 
+    > On reçoit simplement un code d'erreur 404.
+   
+- C : 
+    >
 
 ---
 
