@@ -25,9 +25,9 @@
 ## Exercice 3 — Modifier un conteneur en direct
 
 5. Après suppression du pod, votre message « Bienvenue... » a-t-il survécu ? Pourquoi ?
-   >
+   > Non, notre message n'a pas survécu. Comme pour un container si le message n'est pas sur un volume persistant il ne survit pas à une suppression. Il faudrait le déclarer en dehors du pod à sa création.
 6. Pourquoi le `port-forward` a-t-il cessé de fonctionner après la suppression du pod ?
-   >
+   > le `port-forward` est attaché à UN pod, on l'a supprimé, donc le tunnel cesse de fonctionner.
 
 ## Exercice 4 — Déclaratif
 
