@@ -54,9 +54,9 @@
 ## Exercice 6 — Portainer & Mario
 
 12. URL publique de votre Mario :
-    >
+    > https://special-space-meme-64vxwv66w6fp6q-8585.app.github.dev/
 13. Retrouvez le Deployment `mario` en ligne de commande. Portainer et `kubectl` parlent-ils au même composant ? Lequel ?
-    >
+    > Oui il parle au même composant, via `kube-apiserver`.
 
 ## Bonus (facultatif)
 
