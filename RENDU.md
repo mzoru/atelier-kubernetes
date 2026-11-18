@@ -68,7 +68,9 @@
     > On reçoit simplement un code d'erreur 404.
    
 - C : 
-    >
+    > Les pods sont recréés mais cette fois-ci uniquement sur le master et le node k3d-lab-agent-1
+    
+    > Non, le replica est respecté, 3. Si un noeud tombe alors il pourra être recréé sur agent-0.
 
 ---
 
