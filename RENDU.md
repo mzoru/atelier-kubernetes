@@ -40,12 +40,16 @@
 
 9. Sur quels nœuds se trouvent vos 3 réplicas ? Collez la sortie de `kubectl get pods -l app=site -o wide`.
    ```
-
+      NAME                   READY   STATUS    RESTARTS   AGE   IP          NODE               NOMINATED NODE   READINESS GATES
+      site-75775484b-ct9g9   1/1     Running   0          69s   10.42.1.6   k3d-lab-agent-1    <none>           <none>
+      site-75775484b-nq9ls   1/1     Running   0          69s   10.42.2.5   k3d-lab-server-0   <none>           <none>
+      site-75775484b-qrpsw   1/1     Running   0          15m   10.42.0.7   k3d-lab-agent-0    <none>           <none>
    ```
+   Nos 3 replicas se trouve sur l'ensemble des noeuds, 1 par noeud.
 10. Avec l'image `nginx:9.99`, quel statut avait le pod ? Quelle commande vous a donné la cause ?
-    >
+    > Le pod a un statut `ErrImagePull`. `kubectl get pods -l app=site` permet de trouver la raison du crash.
 11. Pendant la panne, le site restait-il accessible ? Pourquoi ?
-    >
+    > Non, le site n'était pas accessible. Le tunnel n'était plus ouvert, et on ne pouvait plus l'ouvrir car il est en attente des 3 replicas.
 
 ## Exercice 6 — Portainer & Mario
 
