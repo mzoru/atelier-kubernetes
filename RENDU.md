@@ -2,17 +2,17 @@
 
 > Complétez ce fichier au fil de l'atelier, puis faites un commit et un push (voir la section « Rendu » du README).
 
-**Nom / Prénom :**
-**Groupe :**
+**Nom / Prénom :** UROZ Mattias
+**Groupe :** RS2
 
 ---
 
 ## Exercice 1 — Cluster
 
 1. Combien de nœuds affiche `kubectl get nodes` ? Quel est le rôle de chacun ?
-   >
+   > `kubectl get nodes` affiche 3 noeuds. `k3d-lab-server-0` agit ici commme un LoadBalancer, qui répartie la charge entre `k3d-lab-agent-0` et `k3d-lab-server-1`.
 2. Que montre `docker ps` ? Qu'est-ce qu'un « nœud » dans k3d, concrètement ?
-   >
+   > Un noeuf dans k3d est un simple container docker.
 
 ## Exercice 2 — Premier déploiement
 
